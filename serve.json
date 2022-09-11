@@ -1,0 +1,35 @@
+{
+  "rewrites": [
+    {
+      "source": "inspire/css/fragment.css",
+      "destination": "/css/fragment.css"
+    },
+    {
+      "source": "inspire/js/app.js",
+      "destination": "/js/app.js"
+    },
+    {
+      "source": "inspire/js/data.js",
+      "destination": "/js/data.js"
+    },    
+    {
+      "source": "recommendations/**",
+      "destination": "/fragment.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "**",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Origin, X-Requested-With, Content-Type, Accept, Range"
+        }
+      ]
+    }
+  ]
+}
